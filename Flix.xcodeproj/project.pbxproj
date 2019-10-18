@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,7 +50,6 @@
 				46DADD15E98BD926DB92050C /* Pods-Flix.debug.xcconfig */,
 				0529B1C5DF6E9DBF4F00DD51 /* Pods-Flix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,12 +76,12 @@
 			children = (
 				594E9FF52357D40E000D8CBD /* AppDelegate.swift */,
 				594E9FF72357D40E000D8CBD /* SceneDelegate.swift */,
+				594EA00B2357FB21000D8CBD /* MovieCell.swift */,
 				594EA0092357DE6D000D8CBD /* MoviesViewController.swift */,
 				594E9FFB2357D40E000D8CBD /* Main.storyboard */,
 				594E9FFE2357D40F000D8CBD /* Assets.xcassets */,
 				594EA0002357D40F000D8CBD /* LaunchScreen.storyboard */,
 				594EA0032357D40F000D8CBD /* Info.plist */,
-				594EA00B2357FB21000D8CBD /* MovieCell.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
