@@ -19,7 +19,6 @@ class MovieDetailsViewController: UIViewController {
     var movies = [[String:Any]]()
     var movie: [String:Any]!
     var movieTrailer: [String:Any]!
-    var selection: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,8 +58,9 @@ class MovieDetailsViewController: UIViewController {
                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                  
                  self.movies = dataDictionary["results"] as! [[String:Any]]
+                    
                 
-                 self.movieTrailer = self.movies[self.selection]
+                 self.movieTrailer = self.movies[0]
                     
                     
                 

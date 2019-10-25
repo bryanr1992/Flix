@@ -82,7 +82,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         let detailsViewController = segue.destination as! MovieDetailsViewController
         
         detailsViewController.movie = movie
-        detailsViewController.selection = indexPath.item
+       
         
         collectionView.deselectItem(at: indexPath, animated: true)
     }
