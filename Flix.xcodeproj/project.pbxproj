@@ -15,6 +15,7 @@
 		594EA0022357D40F000D8CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594EA0002357D40F000D8CBD /* LaunchScreen.storyboard */; };
 		594EA00A2357DE6D000D8CBD /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EA0092357DE6D000D8CBD /* MoviesViewController.swift */; };
 		594EA00C2357FB21000D8CBD /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EA00B2357FB21000D8CBD /* MovieCell.swift */; };
+		594EA00E23628993000D8CBD /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EA00D23628993000D8CBD /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		594EA0032357D40F000D8CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594EA0092357DE6D000D8CBD /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		594EA00B2357FB21000D8CBD /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		594EA00D23628993000D8CBD /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		B85EA0009D5D3F4C47BA276E /* Pods_Flix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				594EA00B2357FB21000D8CBD /* MovieCell.swift */,
 				594EA0092357DE6D000D8CBD /* MoviesViewController.swift */,
 				594E9FFB2357D40E000D8CBD /* Main.storyboard */,
+				594EA00D23628993000D8CBD /* MovieDetailsViewController.swift */,
 				594E9FFE2357D40F000D8CBD /* Assets.xcassets */,
 				594EA0002357D40F000D8CBD /* LaunchScreen.storyboard */,
 				594EA0032357D40F000D8CBD /* Info.plist */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594EA00E23628993000D8CBD /* MovieDetailsViewController.swift in Sources */,
 				594E9FF62357D40E000D8CBD /* AppDelegate.swift in Sources */,
 				594E9FF82357D40E000D8CBD /* SceneDelegate.swift in Sources */,
 				594EA00C2357FB21000D8CBD /* MovieCell.swift in Sources */,
