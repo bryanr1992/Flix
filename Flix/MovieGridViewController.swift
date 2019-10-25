@@ -43,7 +43,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
             
             self.collectionView.reloadData()
             
-            print(self.movies)
 
 
            }
@@ -83,20 +82,10 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         let detailsViewController = segue.destination as! MovieDetailsViewController
         
         detailsViewController.movie = movie
+        detailsViewController.selection = indexPath.item
         
         collectionView.deselectItem(at: indexPath, animated: true)
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

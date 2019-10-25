@@ -18,6 +18,7 @@
 		594EA00E23628993000D8CBD /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EA00D23628993000D8CBD /* MovieDetailsViewController.swift */; };
 		594EA0102362956E000D8CBD /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EA00F2362956E000D8CBD /* MovieGridViewController.swift */; };
 		59B3782A2362A9E600319FF2 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B378292362A9E600319FF2 /* MovieGridCell.swift */; };
+		59B3782E2363720B00319FF2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3782D2363720B00319FF2 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		594EA00D23628993000D8CBD /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		594EA00F2362956E000D8CBD /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
 		59B378292362A9E600319FF2 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
+		59B3782D2363720B00319FF2 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B85EA0009D5D3F4C47BA276E /* Pods_Flix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				594EA0002357D40F000D8CBD /* LaunchScreen.storyboard */,
 				594EA0032357D40F000D8CBD /* Info.plist */,
 				59B378292362A9E600319FF2 /* MovieGridCell.swift */,
+				59B3782D2363720B00319FF2 /* WebViewController.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				594EA00A2357DE6D000D8CBD /* MoviesViewController.swift in Sources */,
 				594EA0102362956E000D8CBD /* MovieGridViewController.swift in Sources */,
 				59B3782A2362A9E600319FF2 /* MovieGridCell.swift in Sources */,
+				59B3782E2363720B00319FF2 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,10 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     
+    var movies = [[String:Any]]()
     var movie: [String:Any]!
+    var movieTrailer: [String:Any]!
+    var selection: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +45,38 @@ class MovieDetailsViewController: UIViewController {
         let backdropURL = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
         
         backdropView.af_setImage(withURL: backdropURL!)
+        
+        let movieID = movie["id"] as! Int
+        
+        let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieID)/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+             let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+             let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+             let task = session.dataTask(with: request) { (data, response, error) in
+                
+                if let error = error {
+                   print(error.localizedDescription)
+                } else if let data = data {
+                   let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                 
+                 self.movies = dataDictionary["results"] as! [[String:Any]]
+                
+                 self.movieTrailer = self.movies[self.selection]
+                    
+                    
+                
+        
+                }
+             }
+             task.resume()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        let destination = segue.destination as! WebViewController
+        
+        destination.key = movieTrailer["key"] as! String
+        
     }
-    */
+    
 
 }
