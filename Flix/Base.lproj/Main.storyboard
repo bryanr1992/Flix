@@ -190,7 +190,7 @@
                         <viewLayoutGuide key="safeArea" id="ao6-B5-dYS"/>
                     </view>
                     <connections>
-                        <outlet property="webPlayer" destination="0F6-bN-fH5" id="tRk-93-4Xt"/>
+                        <outlet property="webPlayer" destination="0F6-bN-fH5" id="upf-bV-S22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6n-Mg-RvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

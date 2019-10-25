@@ -13,7 +13,7 @@ class WebViewController: UIViewController, WKUIDelegate {
     
     var key = String()
 
-    @IBOutlet weak var webPlayer: WKWebView!
+    @IBOutlet var webPlayer: WKWebView!
     
     override func loadView(){
         let webConfiguration = WKWebViewConfiguration()
